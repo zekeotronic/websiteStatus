@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#header > form {
+  margin-left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+input {
+  margin: 0 0.25rem;
+}
+
+#reload,
+#add-new-site-btn {
+  width: 10%;
+  padding: 0.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#main {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.5rem 1rem rgba(203, 203, 203, 0.1);
+  margin: 0.5%;
+  padding-bottom: 0.5rem;
+}
+
+.top-div,
+.bottom-div {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.top-text {
+  font-size: 1.2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+.bottom-text {
+  font-size: 0.875rem;
+  font-family: "Roboto Mono", monospace;
+}
+p {
+  padding: 5px;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}

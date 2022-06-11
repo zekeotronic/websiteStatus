@@ -1,0 +1,43 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'"
+    /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>websiteStatus</title>
+  </head>
+  <body>
+    <div id="header">
+      <form>
+        <input id="new-site-name" type="text" placeholder="Site name" />
+        <input
+          id="new-site-url"
+          type="text"
+          placeholder="https://www.examplesite.com"
+        />
+        <input id="add-new-site-btn" type="button" value="Add" />
+      </form>
+      <button id="reload">Reload</button>
+    </div>
+    <div id="main"></div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
