@@ -1,7 +1,7 @@
 const { contextBridge } = require('electron')
 const axios = require('axios').default
-const x = './red-x.png';
-const check = './green-check.png';
+const x = './img/red-x.png';
+const check = './img/green-check.png';
 const statusCodes = [
   { 
     code: 100,

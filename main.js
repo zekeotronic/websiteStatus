@@ -4,7 +4,7 @@ const path = require('path')
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
     show: false,
-    icon: path.join(__dirname, 'info.ico'),
+    icon: path.join(__dirname, 'icons/info.ico'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
