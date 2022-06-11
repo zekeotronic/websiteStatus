@@ -21,7 +21,7 @@ document.getElementById('add-new-site-btn').addEventListener('click', (e) => {
   e.preventDefault()
   addNewSite()
   window.location.reload()
-});
+})
 
 document.getElementById('reload').addEventListener('click', () => {
   window.location.reload()
